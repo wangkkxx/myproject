@@ -1,0 +1,644 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+.content{
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.clear-float:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.clear-mt:before{
+    content: "";
+    display: table;
+}
+.container{
+    min-width: 1200px;
+}
+h1{
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 68px;
+    padding-top: 40px;
+    color: #333;
+}
+p{
+    color: #666;
+    line-height: 32px;
+}
+.top{
+    width: 100%;
+}
+nav{
+    width: 100%;
+    min-width: 1200px;
+    height: 60px;
+    font-size: 14px;
+    background: #111;
+    color: #fff;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    justify-content: center;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #2277da;
+}
+nav #logo{
+    float: left;
+    margin-top:15px;
+    margin-right:50px;
+}
+/*顶部导航栏-中间-开始*/
+nav .top-nav>li{
+    float: left;
+    margin-right: 20px;
+    line-height: 60px;
+    position:relative;
+}
+/*下拉-通用样式*/
+nav .dropdown{       
+    background:#111;
+    position:absolute;
+    font-size: 14px;
+    display:none;
+}
+nav ul.dropdown{
+    padding: 0 15px 10px;
+}
+nav ul.dropdown a{
+    display: block;
+    width:320px;
+    height: 50px;
+    background: #292929;
+    border-radius: 4px;
+    margin: 0 auto 10px;
+    padding-left:10px;
+}
+nav ul.dropdown li{
+    line-height: 26px;
+}
+nav ul.dropdown p{
+    font-size: 10px;
+    color: #999;
+}
+nav .pills{
+  display:inline-block;
+  background: #fd7b00;
+  color: #fff;
+  font-size: 8px;
+  border-radius: 4px;
+  height: 20px;
+  line-height: 20px;
+  padding:0 4px;
+  margin-left: 8px;
+}
+/*域名注册*/
+nav .domains .dropdown{
+    width: 420px;
+    height: 208px;
+    padding-bottom: 10px;
+}
+nav .domains ul{
+    border-left:1px solid #999;
+    float: left;
+    line-height: 36px;
+    height: 100%;
+    padding:0 20px;
+}
+nav .domains ul:first-child{
+    border:0;
+    padding-left:20px;
+}
+nav .domains ul li:first-child{
+    color: #999;
+}
+nav .domains ul li{
+    line-height: 30px;
+}
+nav .domains:hover .dropdown{
+    display: block;
+    z-index: 1;
+}
+
+/*云虚拟主机*/
+nav .host:hover .dropdown{
+    display: block;
+    z-index: 1;
+}
+
+/*云服务器*/
+nav .clouds:hover .dropdown{
+    display: block;
+    z-index: 1;
+}
+/*独立服务器*/
+nav .idc .dropdown{
+  width: 520px;
+  height: 360px;
+  padding: 10px 20px;
+  line-height: 40px;
+}
+nav .idc .dropdown ul{
+  float: left;
+  width: 150px;
+  border-right: 1px solid #999;
+}
+nav .idc:hover .dropdown{
+  display: block;
+  z-index: 1;
+}
+/*解决方案*/
+nav .solution:hover .dropdown{
+    display: block;
+    z-index: 1;
+}
+/*顶部导航栏-中间-结束*/
+/*顶部导航栏-右侧-开始*/
+nav .top-right li{
+    float: right;
+    line-height: 60px;
+    font-size: 12px;
+}
+nav .top-right li img{
+    margin:0 8px;
+    vertical-align: baseline;
+}
+nav .top-right li:first-child{
+    margin-left: 20px;
+}
+/*顶部导航栏-右侧-结束*/
+/*top-banner-start*/
+.banner{
+    background:url("../img/idc/idcbanner.jpg") center ;
+    text-align: center;
+    width: 100%;
+    height:440px;    /*?banner*/
+}
+/*top-banner-end*/
+/*至强处理器、英特尔固态硬盘...-开始*/
+.bafter{
+    width: 100%;
+    height: 114px;
+    color: #333;
+    padding-top: 10px;
+    background-color: #f2f2f2;
+}
+.bafter ul li{
+    float: left;
+    width: 172px;
+    margin-right: 33px;
+    padding-left: 103px;
+}
+.bafter ul li:last-child{
+    margin-right: 0;
+}
+.bafter ul li.b1{
+    background: url(../img/idc/idcsm_03.jpg) no-repeat left center;
+}
+.bafter ul li.b2{
+    background: url(../img/idc/idcsm_05.jpg) no-repeat left center;
+}
+.bafter ul li.b3{
+    background: url(../img/idc/idcsm_07.jpg) no-repeat left center;
+}
+.bafter ul li.b4{
+    background: url(../img/idc/idcsm_09.jpg) no-repeat left center;
+}
+.bafter ul li p:first-child{
+    line-height: 2em;
+}
+.bafter ul li p:nth-child(2){
+    font-size: 12px;
+    color: #999;
+    line-height: 2em;
+}
+/*至强处理器、英特尔固态硬盘...-开始*/
+/*合肥服务器、BGP多线服务器、香港服务器、高防服务器-开始*/
+.servers{
+    width: 100%;
+    height: 430px;
+    padding: 20px 0;
+    color: #333;
+}
+.servers li{
+    float: left;
+}
+.servers li.lf{
+    width: 286px;
+    height: 410px;
+    margin-top: 20px;
+    border-top: 8px solid #ff303a;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 0 50px #dfdfdf;
+}
+.servers li span.icon{
+    display: block;
+    height: 122px;
+    overflow: hidden;
+}
+.servers li p.t1{
+    font-size: 24px;
+    text-align: center;
+    line-height: 26px;
+}
+.servers li p.t2{
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    line-height: 20px;
+    padding: 8px 0 20px 0;
+}
+.servers li .t3{
+    text-align: center;
+}
+.servers li .t3 span{
+    display: inline-block;
+    width: 74px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-right: 1px solid #e5e5e5;
+    margin: 10px 0;
+}
+.servers li .t3 span:last-child{
+    border-right: none;
+}
+.servers li .tb{
+    font-size: 14px;
+    margin-top: 15px;
+}
+.servers li .tb a{
+    color: #999;
+    text-decoration: none;
+}
+.servers li .tb table{
+    margin: 0 auto;
+}
+.servers li .tb td{
+    width: 50%;
+    line-height:30px;
+}
+.servers li .tb td .s1{
+    color: #ff303a;
+    font-size: 12px;
+    line-height: 16px;
+    position: relative;
+    top: -15px;
+}
+.servers li .tb td .s2{
+    color: #ff303a;
+    font-size: 32px;
+    line-height: 80px;
+}
+.servers li .tb td .s3{
+    color: #666;
+    font-size: 14px;
+    line-height: 36px;
+}
+.servers li .tb .ckxq{
+    display: inline-block;
+    color: #333;
+    padding: 5px 30px;
+    height: 20px;
+    line-height: 20px;
+    border:1px solid #d9d9d9;
+    border-radius: 3px;
+}
+.servers li .tb a:hover .ckxq{
+    border-color: #ff303a;
+    color: #ff303a;
+}
+.servers li.lr{
+    width: 300px;
+    height: 440px;
+}
+.servers li.lr a{
+    display: block;
+    width: 280px;
+    height: 200px;
+    background: #fafafa;
+    border-radius: 3px;
+    margin:20px 10px;
+    color: #333;
+    text-decoration: none;
+}
+.servers li.lr p{
+    text-align: center;
+}
+.servers li.lr p.t2{
+    line-height: 2em;
+}
+.servers li.l1 span.icon{
+    background: url(../img/idc/mdImg3.png) no-repeat center 22px;
+}
+.servers li.l3 span.icon{
+    background: url(../img/idc/mdImg1.png) no-repeat center 22px;
+}
+.servers li.l3 span.ts{
+    background: #e95048;
+    border-radius: 3px;
+    color: #fff;
+}
+/*合肥服务器、BGP多线服务器、香港服务器、高防服务器-结束*/
+/*服务器频繁被攻击、业务受影响怎么办？-开始*/
+.qus{
+    width: 100%;
+    height: 240px;
+    background: #f2f2f2;
+    color: #333;
+}
+.qus a{
+    display: inline-block;
+    color: #fff;
+    background: #2277da;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 3px 35px;
+    margin-top: 20px;
+}
+/*服务器频繁被攻击、业务受影响怎么办？-结束*/
+/*全球机房部署-开始*/
+.map .map-img{
+    width: 100%;
+    height: 594px;
+    background: url(../img/idc/idcmap.jpg) no-repeat left center;
+}
+/*全球机房部署-结束*/
+/*网硕互联优势-开始*/
+.ad{
+    width: 100%;
+    background: #f2f2f2;
+    height: 565px;
+}
+.ad ul{
+    margin-top: 40px;
+}
+.ad ul li{
+    float: left;
+    width: 43%;
+    padding-right: 7%;
+    margin-bottom: 36px;
+    font-size: 14px;
+    color: #666;
+    line-height: 28px; 
+}
+.ad ul li .adt{
+    font-size: 16px;
+    line-height: 2em;
+    color: #444;
+    padding-left: 44px;
+}
+.ad ul li .ad1{
+    background: url(../img/idc/yous_06.jpg) no-repeat left center;
+}
+.ad ul li .ad2{
+    background: url(../img/idc/yous_03.jpg) no-repeat left center;
+}
+.ad ul li .ad3{
+    background: url(../img/idc/yous_14.jpg) no-repeat left center;
+}
+.ad ul li .ad4{
+    background: url(../img/idc/yous_11.jpg) no-repeat left center;
+}
+.ad ul li .ad5{
+    background: url(../img/idc/yous_23.png) no-repeat left center;
+}
+.ad ul li .ad6{
+    background: url(../img/idc/yous_22.png) no-repeat left center;
+}
+/*网硕互联优势-结束*/
+/*我们的客户反馈-开始*/
+.cfb ul{
+    margin: 30px 0 40px;
+    height: 300px;
+}
+.cfb ul li{
+    float: left;
+}
+.cfb ul li.word{
+    width: 380px;
+    text-align: justify;
+    font-size: 14px;
+    color: #666;
+    line-height: 36px;
+    margin-right: 40px;
+}
+/*我们的客户反馈-结束*/
+/*底部样式-开始*/
+footer{
+    width: 100%;
+    color: #bbb;
+}
+footer a{
+    color: #bbb;
+    text-decoration: none;
+}
+footer a:hover{
+    color:#2377da;
+}
+/*注册会员OR成为合作伙伴*/
+footer .f1{
+    width: 100%;
+    height: 100px;
+    background:#2377da url(../img/footer/bag03.jpg) center center no-repeat;
+    text-align: center;
+}
+footer .f1 a{
+    display: inline-block;
+    color: #fff;
+    text-decoration:none;
+    border:1px solid #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    position: relative;
+    top:30px;
+}
+footer .f1 a:first-child{
+    right: 2px;
+}
+footer .f1 a:last-child{
+    left: 214px;
+}
+/*售后保障*/
+footer .f2{
+    background: #444;
+}
+footer .f2 .content{
+    height: 80px;
+    color: #fff;
+}
+footer .f2 .f-after{
+    width: 1200px;
+    height: 80px;
+    font-size: 14px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+footer .f2 .f-after li{
+    float: left;
+    align-self: center;
+}
+footer .f2 .f-after li img{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+/*横线*/
+footer hr{
+    width: 100%;
+    border:none;
+    border-top: 1px solid #fff;
+}
+/*产品导航*/
+footer .f3{
+    background: #444;
+}
+footer .f3 .content{
+    height: 40px;
+}
+footer .f3 .f-nav{
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #888;
+}
+footer .f3 .f-nav li{
+    float: left;
+    margin-left: 20px;
+    line-height: 40px;
+}
+footer .f3 a{
+    color: #fff;
+}
+footer .f3 a:hover{
+    color: #2377da;
+}
+/*底部主导航*/
+footer .f4{
+    background: #2E3033;
+    color:#bbb;
+}
+footer .f4 .content{
+    height: 266px;
+}
+footer .f4 .fb,.flogo{
+    float: left;
+    margin-top: 50px;
+    border-left: 1px solid #bbb;
+    padding-left: 20px;
+}
+footer .f4 .fb{
+    margin-right: 80px;
+    font-size: 12px;
+}
+footer .f4 .fb p{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+footer .f4 .fb li{
+    line-height: 32px;
+}
+footer .f4 table img{
+    margin-right: 5px;
+}
+footer .f4 table td{
+    width:120px;
+    height: 50px;
+}
+footer .f4 .flogo{
+    width:300px;
+    height: 150px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+footer .f4 .flogo img{
+    margin: 18px auto;
+}
+footer .f4 .clear:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+footer .f4 .fb,.flogo{
+    float: left;
+    margin-top: 50px;
+    border-left: 1px solid #bbb;
+    padding-left: 20px;
+}
+footer .f4 .fb{
+    margin-right: 80px;
+    font-size: 12px;
+}
+footer .f4 .fb p{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+footer .f4 .fb li{
+    line-height: 2em;
+}
+footer .f4 table img{
+    margin-right: 5px;
+}
+footer .f4 table td{
+    width:120px;
+    height: 50px;
+}
+footer .f4 .flogo{
+    width:300px;
+    height: 150px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+footer .f4 .flogo img{
+    margin: 18px auto;
+}
+footer .f4 .clear:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+/*友情链接*/
+footer .f5{
+    width: 100%;
+    background: #2e3033;
+    font-size: 12px;
+}
+footer .f5 .content{
+    height: 40px;
+}
+footer .f5 a{
+    margin: 0 10px;
+}
+footer .f5 span{
+    margin: 0 20px;
+}
+/*版权声明*/
+footer .f6{
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    color:#000;
+}
+/*底部样式-结束*/
