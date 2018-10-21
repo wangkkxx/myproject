@@ -138,7 +138,7 @@ nav .clouds:hover .dropdown{
 
 /*独立服务器*/
 nav .idc .dropdown{
-  width: 520px;
+  width: 510px;
   height: 360px;
   padding: 10px 20px;
   line-height: 40px;
@@ -160,7 +160,12 @@ nav .idc:hover .dropdown{
   display: block;
   z-index: 1;
 }
-
+nav .idc .rtbox .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9{
+    display: none;
+}
+nav .idc .rtbox .on{
+    display: block;
+}
 /*解决方案*/
 nav .solution:hover .dropdown{
     display: block;
